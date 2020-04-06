@@ -1,0 +1,56 @@
+<div id="wrap" class="swiper-slide">
+
+	<div id="left">
+		<h1>{{ biography.full-name }} <a>alias</a> {{ name }}</h1>
+		<img src="{{ image.url }}">
+	</div>
+
+	<div id="right">
+
+
+		<h1>Appearance Table</h1>
+		<div class="grid-container">
+		  <div id="1"><a>Alignement</a></div>
+		  <div id="2"><a>Race</a></div>
+		  <div id="3"><a>Gender</a></div>  
+		  <div id="4"><a>Height</a></div>
+		  <div id="5"><a>Weight</a></div>
+		  <div id="6">{{biography.alignment}}</div>
+		  <div id="7">{{appearance.race}}</div>
+		  <div id="8">{{appearance.gender}}</div>
+		  <div id="9">{{appearance.height.[1]}}</div>
+		  <div id="10">{{appearance.weight.[1]}}</div>
+		</div>
+
+		<br>
+		<p><a>Place of birth: </a>{{biography.place-of-birth}}</p>
+		<br>
+		<p id="aliases"><a>Other Aliases: </a>
+			{{#each biography.aliases}}
+		    	{{ this }}, 
+			{{/each}}
+		</p>
+		
+
+		<div id="powerstat">
+		  {{#each powerstats}}
+			 <ul>
+			    <li> {{ @key }} : {{ this }}%</li>
+				<progress value="{{ this }}" max="100"></progress>
+			</ul>
+		  {{/each}}
+		</div>
+		<br>
+		
+		
+		
+		<p><a>First appearance: </a>{{biography.first-appearance}}</p>
+		<br>
+		<p><a>Publisher: </a>{{biography.publisher}}</p>
+		<br>
+			
+
+
+	</div>
+
+</div>

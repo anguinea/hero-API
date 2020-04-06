@@ -1,0 +1,130 @@
+body{
+	background-image: url("../images/fond.jpg");
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	
+	#search_hero
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 80px;
+		border-bottom: 1px solid #e8e8e8;
+		margin-bottom: 63px;
+	
+		input[type=text]{
+			height: 64px;
+			font-family: Roboto;
+			font-size: 60px;
+			font-weight: 500;
+			line-height: 1.07;
+			border: none;
+			color: #e8e8e8;
+			padding-bottom: 16px;
+		}
+		
+		img{
+			width: 32px;
+			height: 32px;
+			padding: 25px 25px 25px 30px;
+		}
+	}
+
+	.swiper-container {
+		width: 100%;
+		background-color: rgba(255, 255, 255, 0.6);
+		border-radius : 20px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+		margin-top: 5%;		
+
+		#wrap{
+			display: flex;
+			justify-content: space-around;
+
+			h1{
+				text-align: center;
+				font-weight: 500;
+				font-size: 25px;
+				margin-bottom: 20px;
+			}
+
+			#left a{
+				font-style: italic;
+			}
+
+
+			#right{
+				width : 50%;
+				margin-top: 40px;
+
+				a{
+					font-weight: 500;
+				}
+
+				#aliases{
+					margin-bottom: 20px;					
+				}
+
+				#powerstat{
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					font-size: 16px;
+					margin-top: 50px;
+					margin-bottom: 50px;
+
+					ul{
+						margin-right: 60px;
+						
+						li{
+							font-size: 18px;
+							font-weight: 500;
+						}
+					}
+
+					progress{
+						    display: block;
+						    margin: 10px 0 15px 0;
+						    border: 1px solid white;
+						    border-radius: 2px;
+						    background-color: #d4d4d4;
+						    box-shadow: 0 0 0 2px #ffffff;
+					}
+
+				}
+
+				.grid-container{
+					display: grid;
+					grid-template-columns: repeat(5, auto);
+					grid-template-rows: repeat(2, auto);
+					grid-column-gap: 40px;
+					grid-row-gap: 20px;
+					justify-items: center;
+					margin-bottom: 50px;
+					margin-top: 40px;
+
+					div#1 { grid-area: 1 / 1 / 2 / 2; }
+					div#2 { grid-area: 1 / 2 / 2 / 3; }
+					div#3 { grid-area: 1 / 3 / 2 / 4; }
+					div#4 { grid-area: 1 / 4 / 2 / 5; }
+					div#5 { grid-area: 1 / 5 / 2 / 6; }
+					div#6 { grid-area: 2 / 1 / 3 / 2; }
+					div#7 { grid-area: 2 / 2 / 3 / 3; }
+					div#8 { grid-area: 2 / 3 / 3 / 4; }
+					div#9 { grid-area: 2 / 4 / 3 / 5; }
+					div#10 { grid-area: 2 / 5 / 3 / 6; }
+				}
+
+			}
+
+		}
+
+		.swiper-button-prev,.swiper-button-next{
+			color: black
+		}
+
+	}
+
+}
